@@ -147,15 +147,13 @@ let result = add(five, ten);
 
 		{token.STRING, "foobar"},
 		{token.STRING, "foo bar"},
-		{token.RBRACKET, "["},
+		{token.LBRACKET, "["},
 		{token.INT, "1"},
 		{token.COMMA, ","},
 		{token.INT, "2"},
-		{token.LBRACKET, "]"},
+		{token.RBRACKET, "]"},
 		{token.SEMICOLON, ";"},
 		{token.EOF, ""},
-
-
 	}
 
 	testStringSequence(input, tests, t)
