@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b14a964f-07b8-442b-a5f5-f772ca451833" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ast/ast.go" beforeDir="false" afterPath="$PROJECT_DIR$/ast/ast.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lexer/lexer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/lexer/lexer_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/parser.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/parser_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/parser_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/token/token.go" beforeDir="false" afterPath="$PROJECT_DIR$/token/token.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/zLang.iml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,122 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parser/parser_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="877">
-              <caret line="649" column="55" selection-start-line="649" selection-start-column="55" selection-end-line="649" selection-end-column="55" />
-              <folding>
-                <element signature="n#!!block;n#TestLetStatements#0" />
-                <element signature="e#225#333#0" />
-                <element signature="e#361#817#0" />
-                <element signature="e#496#598#0" />
-                <element signature="e#687#702#0" />
-                <element signature="e#798#813#0" />
-                <element signature="n#!!block;n#TestReturnStatements#0" />
-                <element signature="e#1027#1073#0" />
-                <element signature="e#1108#1208#0" />
-                <element signature="e#1250#1513#0" />
-                <element signature="e#1310#1386#0" />
-                <element signature="e#1431#1510#0" />
-                <element signature="n#!!block;n#TestIdentifierExpression#0" />
-                <element signature="e#1694#1740#0" />
-                <element signature="e#1775#1875#0" />
-                <element signature="e#1948#2031#0" />
-                <element signature="e#2090#2157#0" />
-                <element signature="e#2187#2251#0" />
-                <element signature="e#2290#2362#0" />
-                <element signature="n#!!block;n#TestIntegerLiteralExpression#0" />
-                <element signature="e#2542#2588#0" />
-                <element signature="e#2623#2723#0" />
-                <element signature="e#2796#2879#0" />
-                <element signature="e#2942#3009#0" />
-                <element signature="e#3032#3091#0" />
-                <element signature="e#3125#3197#0" />
-                <element signature="n#!!block;n#TestBooleanExpression#0" />
-                <element signature="e#3373#3419#0" />
-                <element signature="e#3454#3554#0" />
-                <element signature="e#3627#3710#0" />
-                <element signature="e#3766#3830#0" />
-                <element signature="e#3856#3918#0" />
-                <element signature="e#3955#4027#0" />
-                <element signature="n#!!block;n#TestParsingPrefixExpressions#0" />
-                <element signature="e#4169#4265#0" />
-                <element signature="e#4299#5027#0" />
-                <element signature="e#4433#4539#0" />
-                <element signature="e#4614#4699#0" />
-                <element signature="e#4764#4839#0" />
-                <element signature="e#4874#4955#0" />
-                <element signature="e#5009#5024#0" />
-                <element signature="n#!!block;n#TestParsingInfixExpressions#0" />
-                <element signature="e#5199#5530#0" />
-                <element signature="e#5563#6064#0" />
-                <element signature="e#5672#5778#0" />
-                <element signature="e#5853#5955#0" />
-                <element signature="e#6045#6060#0" />
-                <element signature="n#!!block;n#TestOperatorPrecedenceParsing#0" />
-                <element signature="e#6179#7537#0" />
-                <element signature="e#7565#7785#0" />
-                <element signature="e#7721#7782#0" />
-                <element signature="n#!!block;n#TestIfExpression#0" />
-                <element signature="e#7981#8081#0" />
-                <element signature="e#8153#8236#0" />
-                <element signature="e#8294#8363#0" />
-                <element signature="e#8423#8436#0" />
-                <element signature="e#8479#8570#0" />
-                <element signature="e#8657#8757#0" />
-                <element signature="e#8811#8824#0" />
-                <element signature="e#8853#8936#0" />
-                <element signature="n#!!block;n#TestIfElseExpression#0" />
-                <element signature="e#9147#9247#0" />
-                <element signature="e#9319#9402#0" />
-                <element signature="e#9460#9529#0" />
-                <element signature="e#9589#9602#0" />
-                <element signature="e#9645#9736#0" />
-                <element signature="e#9823#9923#0" />
-                <element signature="e#9977#9990#0" />
-                <element signature="e#10033#10124#0" />
-                <element signature="e#10211#10311#0" />
-                <element signature="e#10365#10378#0" />
-                <element signature="n#!!block;n#TestFunctionLiteralParsing#0" />
-                <element signature="e#10586#10686#0" />
-                <element signature="e#10758#10841#0" />
-                <element signature="e#10907#10979#0" />
-                <element signature="e#11015#11100#0" />
-                <element signature="e#11252#11347#0" />
-                <element signature="e#11429#11534#0" />
-                <element signature="n#!!block;n#TestFunctionParameterParsing#0" />
-                <element signature="e#11722#11903#0" />
-                <element signature="e#11883#11898#0" />
-                <element signature="e#11931#12428#0" />
-                <element signature="e#12200#12317#0" />
-                <element signature="e#12361#12425#0" />
-                <element signature="n#!!block;n#TestCallExpression#0" />
-                <element signature="e#12630#12730#0" />
-                <element signature="e#12802#12885#0" />
-                <element signature="e#12945#13014#0" />
-                <element signature="e#13060#13073#0" />
-                <element signature="e#13103#13175#0" />
-                <element signature="n#!!block;n#checkParserErrors#0" />
-                <element signature="n#!!block;n#testLetStatement#0" />
-                <element signature="n#!!block;n#testIntegerLiteral#0" />
-                <element signature="n#!!block;n#testIdentifier#0" />
-                <element signature="n#!!block;n#testBooleanLiteral#0" />
-                <element signature="n#!!block;n#testInfixExpression#0" />
-                <element signature="n#!!block;n#testLiteralExpression#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/parser/parser.go">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="386" column="18" selection-start-line="386" selection-start-column="18" selection-end-line="386" selection-end-column="18" />
-              <folding>
-                <element signature="e#16#87#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -209,12 +96,13 @@
         <option value="$PROJECT_DIR$/evaluator/evaluator_test.go" />
         <option value="$PROJECT_DIR$/evaluator/evaluator.go" />
         <option value="$PROJECT_DIR$/evaluator/builtins.go" />
-        <option value="$PROJECT_DIR$/lexer/lexer.go" />
         <option value="$PROJECT_DIR$/ast/ast.go" />
         <option value="$PROJECT_DIR$/parser/parser_test.go" />
         <option value="$PROJECT_DIR$/token/token.go" />
         <option value="$PROJECT_DIR$/lexer/lexer_test.go" />
         <option value="$PROJECT_DIR$/parser/parser.go" />
+        <option value="$PROJECT_DIR$/lexer/lexer.go" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -297,7 +185,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestLexer_NextToken_Identifiers in zLang/lexer">
+  <component name="RunManager" selected="Go Test.go test zLang/parser">
     <configuration name="TestBuiltinFunctions in zLang/evaluator" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="zLang" />
       <working_directory value="$PROJECT_DIR$/evaluator" />
@@ -353,21 +241,15 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.go test zLang/parser" />
         <item itemvalue="Go Test.TestLexer_NextToken_Identifiers in zLang/lexer" />
         <item itemvalue="Go Test.TestBuiltinFunctions in zLang/evaluator" />
         <item itemvalue="Go Test.go test zLang/evaluator" />
-        <item itemvalue="Go Test.go test zLang/parser" />
         <item itemvalue="Go Test.TestLetStatements in zLang/parser" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestBuiltinFunctions_in_zLang_evaluator - 2019.06.12 at 16h 38m 10s.xml">
-      <configuration name="TestBuiltinFunctions in zLang/evaluator" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestBuiltinFunctions_in_zLang_evaluator - 2019.06.12 at 16h 45m 05s.xml">
-      <configuration name="TestBuiltinFunctions in zLang/evaluator" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="TestBuiltinFunctions_in_zLang_evaluator - 2019.06.12 at 16h 45m 16s.xml">
       <configuration name="TestBuiltinFunctions in zLang/evaluator" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -392,6 +274,12 @@
     <history-entry file="TestLexer_NextToken_Identifiers_in_zLang_lexer - 2019.06.12 at 16h 55m 55s.xml">
       <configuration name="TestLexer_NextToken_Identifiers in zLang/lexer" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="go_test_zLang_parser - 2019.06.13 at 08h 51m 18s.xml">
+      <configuration name="go test zLang/parser" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="go_test_zLang_parser - 2019.06.13 at 08h 51m 59s.xml">
+      <configuration name="go test zLang/parser" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
@@ -402,7 +290,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="1920" y="45" width="1920" height="1035" id="Run" maximized="true" order="2" type="WINDOWED" weight="0.35025907" />
+      <window_info anchor="bottom" x="1920" y="45" width="1920" height="1035" id="Run" maximized="true" order="2" type="WINDOWED" visible="true" weight="0.35025907" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -410,7 +298,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" x="1920" y="45" width="1920" height="1035" id="Terminal" maximized="true" order="10" type="WINDOWED" weight="0.3284974" />
+      <window_info anchor="bottom" x="1920" y="45" width="1920" height="1035" id="Terminal" maximized="true" order="10" type="WINDOWED" visible="true" weight="0.3284974" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -587,17 +475,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/token/token.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lexer/lexer.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+        <state relative-caret-position="245">
+          <caret line="67" column="13" lean-forward="true" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/parser.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="66" column="31" lean-forward="true" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
+          <folding>
+            <element signature="e#16#87#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parser/parser_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="877">
-          <caret line="649" column="55" selection-start-line="649" selection-start-column="55" selection-end-line="649" selection-end-column="55" />
+        <state relative-caret-position="298">
+          <caret line="618" lean-forward="true" selection-start-line="618" selection-end-line="618" />
           <folding>
             <element signature="n#!!block;n#TestLetStatements#0" />
             <element signature="e#225#333#0" />
@@ -700,20 +605,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/token/token.go">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/parser.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="386" column="18" selection-start-line="386" selection-start-column="18" selection-end-line="386" selection-end-column="18" />
-          <folding>
-            <element signature="e#16#87#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
