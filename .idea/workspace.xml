@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b14a964f-07b8-442b-a5f5-f772ca451833" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ast/ast.go" beforeDir="false" afterPath="$PROJECT_DIR$/ast/ast.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/evaluator/evaluator.go" beforeDir="false" afterPath="$PROJECT_DIR$/evaluator/evaluator.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/evaluator/evaluator_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/evaluator/evaluator_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/object/object.go" beforeDir="false" afterPath="$PROJECT_DIR$/object/object.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/parser.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/parser_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/parser_test.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evaluator/evaluator_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="320" column="1" lean-forward="true" selection-start-line="320" selection-start-column="1" selection-end-line="320" selection-end-column="1" />
+            <state relative-caret-position="711">
+              <caret line="342" column="40" lean-forward="true" selection-start-line="342" selection-start-column="40" selection-end-line="342" selection-end-column="40" />
               <folding>
                 <element signature="n#!!block;n#TestEvalIntegerExpression#0" />
                 <element signature="e#194#527#0" />
@@ -47,7 +43,6 @@
                 <element signature="n#!!block;n#TestIfElseExpressions#0" />
                 <element signature="n#!!block;n#TestReturnStatements#0" />
                 <element signature="n#!!block;n#TestErrorHandling#0" />
-                <element signature="n#!!block;n#TestLetStatements#0" />
                 <element signature="n#!!block;n#TestFunctionObject#0" />
                 <element signature="n#!!block;n#TestFunctionApplication#0" />
                 <element signature="n#!!block;n#TestClosures#0" />
@@ -65,10 +60,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/evaluator/evaluator.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+            <state relative-caret-position="150">
+              <caret line="125" column="78" selection-start-line="125" selection-start-column="78" selection-end-line="125" selection-end-column="78" />
               <folding>
                 <element signature="e#67#175#0" />
+                <element signature="n#!!block;n#Eval#0" />
                 <element signature="e#275#351#0" />
                 <element signature="e#353#419#0" />
                 <element signature="e#421#485#0" />
@@ -79,6 +75,7 @@
                 <element signature="e#757#813#0" />
                 <element signature="e#816#958#0" />
                 <element signature="e#916#958#0" />
+                <element signature="e#960#1133#0" />
                 <element signature="e#961#1223#0" />
                 <element signature="e#1049#1073#0" />
                 <element signature="e#1160#1183#0" />
@@ -91,6 +88,7 @@
                 <element signature="e#1667#1898#0" />
                 <element signature="e#1744#1764#0" />
                 <element signature="e#1819#1840#0" />
+                <element signature="e#2093#2301#0" />
                 <element signature="n#!!block;n#applyFunction#0" />
                 <element signature="e#2021#2171#0" />
                 <element signature="e#2174#2219#0" />
@@ -156,6 +154,8 @@
                 <element signature="e#6769#6845#0" />
                 <element signature="n#!!block;n#evalMinusOperatorExpression#0" />
                 <element signature="e#6961#7022#0" />
+                <element signature="n#!!block;n#evalIndexExpression#0" />
+                <element signature="n#!!block;n#evalArrayIndexExpression#0" />
                 <element signature="n#!!block;n#evalBangOperatorExpression#0" />
                 <element signature="e#7253#7375#0" />
                 <element signature="e#7269#7294#0" />
@@ -436,7 +436,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" x="1920" y="45" width="1920" height="1035" id="Terminal" maximized="true" order="10" type="WINDOWED" weight="0.3284974" />
+      <window_info anchor="bottom" x="1920" y="45" width="1920" height="1035" id="Terminal" maximized="true" order="10" type="WINDOWED" visible="true" weight="0.3284974" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -769,8 +769,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluator/evaluator_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="320" column="1" lean-forward="true" selection-start-line="320" selection-start-column="1" selection-end-line="320" selection-end-column="1" />
+        <state relative-caret-position="711">
+          <caret line="342" column="40" lean-forward="true" selection-start-line="342" selection-start-column="40" selection-end-line="342" selection-end-column="40" />
           <folding>
             <element signature="n#!!block;n#TestEvalIntegerExpression#0" />
             <element signature="e#194#527#0" />
@@ -782,7 +782,6 @@
             <element signature="n#!!block;n#TestIfElseExpressions#0" />
             <element signature="n#!!block;n#TestReturnStatements#0" />
             <element signature="n#!!block;n#TestErrorHandling#0" />
-            <element signature="n#!!block;n#TestLetStatements#0" />
             <element signature="n#!!block;n#TestFunctionObject#0" />
             <element signature="n#!!block;n#TestFunctionApplication#0" />
             <element signature="n#!!block;n#TestClosures#0" />
@@ -798,10 +797,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluator/evaluator.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+        <state relative-caret-position="150">
+          <caret line="125" column="78" selection-start-line="125" selection-start-column="78" selection-end-line="125" selection-end-column="78" />
           <folding>
             <element signature="e#67#175#0" />
+            <element signature="n#!!block;n#Eval#0" />
             <element signature="e#275#351#0" />
             <element signature="e#353#419#0" />
             <element signature="e#421#485#0" />
@@ -812,6 +812,7 @@
             <element signature="e#757#813#0" />
             <element signature="e#816#958#0" />
             <element signature="e#916#958#0" />
+            <element signature="e#960#1133#0" />
             <element signature="e#961#1223#0" />
             <element signature="e#1049#1073#0" />
             <element signature="e#1160#1183#0" />
@@ -824,6 +825,7 @@
             <element signature="e#1667#1898#0" />
             <element signature="e#1744#1764#0" />
             <element signature="e#1819#1840#0" />
+            <element signature="e#2093#2301#0" />
             <element signature="n#!!block;n#applyFunction#0" />
             <element signature="e#2021#2171#0" />
             <element signature="e#2174#2219#0" />
@@ -889,6 +891,8 @@
             <element signature="e#6769#6845#0" />
             <element signature="n#!!block;n#evalMinusOperatorExpression#0" />
             <element signature="e#6961#7022#0" />
+            <element signature="n#!!block;n#evalIndexExpression#0" />
+            <element signature="n#!!block;n#evalArrayIndexExpression#0" />
             <element signature="n#!!block;n#evalBangOperatorExpression#0" />
             <element signature="e#7253#7375#0" />
             <element signature="e#7269#7294#0" />
