@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b14a964f-07b8-442b-a5f5-f772ca451833" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/evaluator/builtins.go" beforeDir="false" afterPath="$PROJECT_DIR$/evaluator/builtins.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/object/object_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ast/ast.go" beforeDir="false" afterPath="$PROJECT_DIR$/ast/ast.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluator/evaluator_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/evaluator/evaluator_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lexer/lexer.go" beforeDir="false" afterPath="$PROJECT_DIR$/lexer/lexer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lexer/lexer_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/lexer/lexer_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object/object.go" beforeDir="false" afterPath="$PROJECT_DIR$/object/object.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/parser_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/parser_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/token/token.go" beforeDir="false" afterPath="$PROJECT_DIR$/token/token.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,10 +36,32 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/evaluator/builtins.go">
+        <entry file="file://$PROJECT_DIR$/evaluator/evaluator_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="843">
-              <caret line="97" column="55" selection-start-line="97" selection-start-column="55" selection-end-line="97" selection-end-column="55" />
+            <state relative-caret-position="873">
+              <caret line="408" selection-start-line="408" selection-end-line="408" />
+              <folding>
+                <element signature="n#!!block;n#TestEvalIntegerExpression#0" />
+                <element signature="e#194#527#0" />
+                <element signature="e#555#640#0" />
+                <element signature="n#!!block;n#TestStringLiteral#0" />
+                <element signature="n#!!block;n#TestStringConcatLiteral#0" />
+                <element signature="n#!!block;n#TestEvalBooleanExpression#0" />
+                <element signature="n#!!block;n#TestBangOperator#0" />
+                <element signature="n#!!block;n#TestIfElseExpressions#0" />
+                <element signature="n#!!block;n#TestReturnStatements#0" />
+                <element signature="n#!!block;n#TestErrorHandling#0" />
+                <element signature="n#!!block;n#TestLetStatements#0" />
+                <element signature="n#!!block;n#TestFunctionObject#0" />
+                <element signature="n#!!block;n#TestFunctionApplication#0" />
+                <element signature="n#!!block;n#TestClosures#0" />
+                <element signature="n#!!block;n#TestBuiltinFunctions#0" />
+                <element signature="n#!!block;n#TestIndexExpressions#0" />
+                <element signature="n#!!block;n#testNullObject#0" />
+                <element signature="n#!!block;n#testBooleanObject#0" />
+                <element signature="n#!!block;n#testEval#0" />
+                <element signature="n#!!block;n#testIntegerObject#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,6 +96,9 @@
       <find>Integer</find>
       <find>String</find>
       <find>ArrayLiteral</find>
+      <find>:</find>
+      <find>LBRACE</find>
+      <find>Array</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -77,6 +111,7 @@
       <replace>String</replace>
       <replace>Array</replace>
       <replace>IndexExpression</replace>
+      <replace>Hash</replace>
     </replaceStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -90,17 +125,18 @@
         <option value="$PROJECT_DIR$/ast/ast_test.go" />
         <option value="$PROJECT_DIR$/repl/repl.go" />
         <option value="$PROJECT_DIR$/object/environment.go" />
-        <option value="$PROJECT_DIR$/token/token.go" />
-        <option value="$PROJECT_DIR$/lexer/lexer_test.go" />
-        <option value="$PROJECT_DIR$/lexer/lexer.go" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/ast/ast.go" />
-        <option value="$PROJECT_DIR$/parser/parser_test.go" />
-        <option value="$PROJECT_DIR$/parser/parser.go" />
-        <option value="$PROJECT_DIR$/object/object.go" />
-        <option value="$PROJECT_DIR$/evaluator/evaluator_test.go" />
         <option value="$PROJECT_DIR$/evaluator/evaluator.go" />
         <option value="$PROJECT_DIR$/evaluator/builtins.go" />
+        <option value="$PROJECT_DIR$/token/token.go" />
+        <option value="$PROJECT_DIR$/lexer/lexer.go" />
+        <option value="$PROJECT_DIR$/lexer/lexer_test.go" />
+        <option value="$PROJECT_DIR$/ast/ast.go" />
+        <option value="$PROJECT_DIR$/parser/parser_test.go" />
+        <option value="$PROJECT_DIR$/object/object_test.go" />
+        <option value="$PROJECT_DIR$/object/object.go" />
+        <option value="$PROJECT_DIR$/parser/parser.go" />
+        <option value="$PROJECT_DIR$/evaluator/evaluator_test.go" />
       </list>
     </option>
   </component>
@@ -109,7 +145,9 @@
     <option name="width" value="1680" />
     <option name="height" value="1027" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -188,7 +226,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.go test zLang/parser">
+  <component name="RunManager" selected="Go Test.TestStringHashKey in zLang/object">
     <configuration name="TestBuiltinFunctions in zLang/evaluator" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="zLang" />
       <working_directory value="$PROJECT_DIR$/evaluator" />
@@ -200,17 +238,6 @@
       <pattern value="^TestBuiltinFunctions$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestLetStatements in zLang/parser" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="zLang" />
-      <working_directory value="$PROJECT_DIR$/parser" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="zLang/parser" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestLetStatements$" />
-      <method v="2" />
-    </configuration>
     <configuration name="TestLexer_NextToken_Identifiers in zLang/lexer" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="zLang" />
       <working_directory value="$PROJECT_DIR$/lexer" />
@@ -220,6 +247,17 @@
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <pattern value="^TestLexer_NextToken_Identifiers$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestStringHashKey in zLang/object" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="zLang" />
+      <working_directory value="$PROJECT_DIR$/object" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="zLang/object" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestStringHashKey$" />
       <method v="2" />
     </configuration>
     <configuration name="go test zLang/evaluator" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -244,56 +282,55 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestStringHashKey in zLang/object" />
         <item itemvalue="Go Test.go test zLang/parser" />
         <item itemvalue="Go Test.TestLexer_NextToken_Identifiers in zLang/lexer" />
         <item itemvalue="Go Test.TestBuiltinFunctions in zLang/evaluator" />
         <item itemvalue="Go Test.go test zLang/evaluator" />
-        <item itemvalue="Go Test.TestLetStatements in zLang/parser" />
       </list>
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="TestBuiltinFunctions_in_zLang_evaluator - 2019.06.12 at 16h 49m 38s.xml">
-      <configuration name="TestBuiltinFunctions in zLang/evaluator" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestLexer_NextToken_Identifiers_in_zLang_lexer - 2019.06.12 at 16h 52m 55s.xml">
-      <configuration name="TestLexer_NextToken_Identifiers in zLang/lexer" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestLexer_NextToken_Identifiers_in_zLang_lexer - 2019.06.12 at 16h 54m 43s.xml">
-      <configuration name="TestLexer_NextToken_Identifiers in zLang/lexer" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestLexer_NextToken_Identifiers_in_zLang_lexer - 2019.06.12 at 16h 54m 54s.xml">
-      <configuration name="TestLexer_NextToken_Identifiers in zLang/lexer" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestLexer_NextToken_Identifiers_in_zLang_lexer - 2019.06.12 at 16h 55m 15s.xml">
-      <configuration name="TestLexer_NextToken_Identifiers in zLang/lexer" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="TestLexer_NextToken_Identifiers_in_zLang_lexer - 2019.06.12 at 16h 55m 55s.xml">
-      <configuration name="TestLexer_NextToken_Identifiers in zLang/lexer" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="go_test_zLang_parser - 2019.06.13 at 08h 51m 18s.xml">
-      <configuration name="go test zLang/parser" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="go_test_zLang_parser - 2019.06.13 at 08h 51m 59s.xml">
-      <configuration name="go test zLang/parser" configurationId="GoTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="go_test_zLang_parser - 2019.06.13 at 09h 01m 41s.xml">
-      <configuration name="go test zLang/parser" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="go_test_zLang_parser - 2019.06.13 at 09h 05m 26s.xml">
       <configuration name="go test zLang/parser" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestLexer_NextToken_Identifiers_in_zLang_lexer - 2019.06.13 at 09h 53m 40s.xml">
+      <configuration name="TestLexer_NextToken_Identifiers in zLang/lexer" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestLexer_NextToken_Identifiers_in_zLang_lexer - 2019.06.13 at 09h 53m 51s.xml">
+      <configuration name="TestLexer_NextToken_Identifiers in zLang/lexer" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="go_test_zLang_parser - 2019.06.13 at 10h 03m 05s.xml">
+      <configuration name="go test zLang/parser" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="go_test_zLang_parser - 2019.06.13 at 10h 06m 20s.xml">
+      <configuration name="go test zLang/parser" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="go_test_zLang_parser - 2019.06.13 at 10h 06m 46s.xml">
+      <configuration name="go test zLang/parser" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="go_test_zLang_parser - 2019.06.13 at 10h 06m 48s.xml">
+      <configuration name="go test zLang/parser" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="go_test_zLang_parser - 2019.06.13 at 10h 07m 26s.xml">
+      <configuration name="go test zLang/parser" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="go_test_zLang_parser - 2019.06.13 at 10h 07m 40s.xml">
+      <configuration name="go test zLang/parser" configurationId="GoTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TestStringHashKey_in_zLang_object - 2019.06.13 at 10h 22m 05s.xml">
+      <configuration name="TestStringHashKey in zLang/object" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24174654" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24174654" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="1920" y="45" width="1920" height="1035" id="Run" maximized="true" order="2" type="WINDOWED" weight="0.35025907" />
+      <window_info anchor="bottom" x="1920" y="45" width="1680" height="1005" id="Run" order="2" type="WINDOWED" weight="0.35025907" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -301,7 +338,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" x="1920" y="45" width="1920" height="1035" id="Terminal" maximized="true" order="10" type="WINDOWED" visible="true" weight="0.3284974" />
+      <window_info anchor="bottom" x="1920" y="45" width="1920" height="1035" id="Terminal" maximized="true" order="10" type="WINDOWED" weight="0.3284974" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -352,33 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lexer/lexer_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="152" column="25" lean-forward="true" selection-start-line="152" selection-start-column="25" selection-end-line="152" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!block;n#TestLexer_NextToken_Basic#0" />
-            <element signature="e#205#412#0" />
-            <element signature="n#!!block;n#TestLexer_NextToken_Keywords#0" />
-            <element signature="e#654#1066#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/token/token.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lexer/lexer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="67" column="13" lean-forward="true" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -392,235 +402,6 @@
           <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="e#14#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/parser.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding>
-            <element signature="e#645#838#0" />
-            <element signature="e#888#927#0" />
-            <element signature="n#!!block;n#ParseProgram#0" />
-            <element signature="e#2298#2428#0" />
-            <element signature="e#2346#2408#0" />
-            <element signature="n#!!block;n#parseStatement#0" />
-            <element signature="e#2520#2697#0" />
-            <element signature="e#2546#2592#0" />
-            <element signature="e#2594#2646#0" />
-            <element signature="e#2648#2694#0" />
-            <element signature="n#!!block;n#parseLetStatement#0" />
-            <element signature="e#2836#2853#0" />
-            <element signature="e#2883#2929#0" />
-            <element signature="e#2963#2980#0" />
-            <element signature="e#3074#3094#0" />
-            <element signature="n#!!block;n#parseReturnStatement#0" />
-            <element signature="e#3316#3336#0" />
-            <element signature="n#!!block;n#parseExpressionStatement#0" />
-            <element signature="e#3561#3581#0" />
-            <element signature="n#!!block;n#parseBoolean#0" />
-            <element signature="e#3668#3720#0" />
-            <element signature="n#!!block;n#parseExpression#0" />
-            <element signature="e#3854#3913#0" />
-            <element signature="e#4009#4146#0" />
-            <element signature="e#4075#4098#0" />
-            <element signature="n#!!block;n#parseIdentifier#0" />
-            <element signature="e#4242#4288#0" />
-            <element signature="n#!!block;n#parseIntegerLiteral#0" />
-            <element signature="e#4470#4547#0" />
-            <element signature="n#!!block;n#parsePrefixExpression#0" />
-            <element signature="e#4678#4738#0" />
-            <element signature="n#!!block;n#parseInfixExpression#0" />
-            <element signature="e#4936#5014#0" />
-            <element signature="n#!!block;n#parseGroupedExpression#0" />
-            <element signature="e#5280#5297#0" />
-            <element signature="n#!!block;n#parseIfExpression#0" />
-            <element signature="e#5453#5470#0" />
-            <element signature="e#5569#5586#0" />
-            <element signature="e#5620#5637#0" />
-            <element signature="e#5720#5846#0" />
-            <element signature="e#5772#5791#0" />
-            <element signature="e#5978#6017#0" />
-            <element signature="n#!!block;n#parseCallArguments#0" />
-            <element signature="e#6206#6240#0" />
-            <element signature="e#6338#6423#0" />
-            <element signature="e#6457#6474#0" />
-            <element signature="n#!!block;n#parseBlockStatement#0" />
-            <element signature="e#6691#6816#0" />
-            <element signature="e#6739#6797#0" />
-            <element signature="n#!!block;n#parseFunctionLiteral#0" />
-            <element signature="e#6973#6990#0" />
-            <element signature="e#7071#7088#0" />
-            <element signature="n#!!block;n#parseStringLiteral#0" />
-            <element signature="e#7223#7269#0" />
-            <element signature="n#!!block;n#parseArrayLiteral#0" />
-            <element signature="n#!!block;n#parseExpressionList#0" />
-            <element signature="e#7580#7614#0" />
-            <element signature="e#7711#7796#0" />
-            <element signature="e#7821#7838#0" />
-            <element signature="n#!!block;n#parseFunctionParameters#0" />
-            <element signature="e#7988#8029#0" />
-            <element signature="e#8071#8117#0" />
-            <element signature="e#8193#8345#0" />
-            <element signature="e#8253#8299#0" />
-            <element signature="e#8379#8396#0" />
-            <element signature="n#!!block;n#Errors#0" />
-            <element signature="n#!!block;n#peekError#0" />
-            <element signature="e#8556#8625#0" />
-            <element signature="n#!!block;n#noPrefixParseFnError#0" />
-            <element signature="e#8741#8785#0" />
-            <element signature="n#!!block;n#registerPrefix#0" />
-            <element signature="n#!!block;n#registerInfix#0" />
-            <element signature="n#!!block;n#nextToken#0" />
-            <element signature="n#!!block;n#curTokenIs#0" />
-            <element signature="n#!!block;n#peekTokenIs#0" />
-            <element signature="n#!!block;n#expectPeek#0" />
-            <element signature="e#9404#9438#0" />
-            <element signature="e#9444#9480#0" />
-            <element signature="n#!!block;n#peekPrecedence#0" />
-            <element signature="e#9571#9586#0" />
-            <element signature="n#!!block;n#curPrecedence#0" />
-            <element signature="e#9691#9706#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/parser_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
-          <folding>
-            <element signature="n#!!block;n#TestLetStatements#0" />
-            <element signature="e#225#333#0" />
-            <element signature="e#361#817#0" />
-            <element signature="e#496#598#0" />
-            <element signature="e#687#702#0" />
-            <element signature="e#798#813#0" />
-            <element signature="n#!!block;n#TestReturnStatements#0" />
-            <element signature="e#1027#1073#0" />
-            <element signature="e#1108#1208#0" />
-            <element signature="e#1250#1513#0" />
-            <element signature="e#1310#1386#0" />
-            <element signature="e#1431#1510#0" />
-            <element signature="n#!!block;n#TestIdentifierExpression#0" />
-            <element signature="e#1694#1740#0" />
-            <element signature="e#1775#1875#0" />
-            <element signature="e#1948#2031#0" />
-            <element signature="e#2090#2157#0" />
-            <element signature="e#2187#2251#0" />
-            <element signature="e#2290#2362#0" />
-            <element signature="n#!!block;n#TestIntegerLiteralExpression#0" />
-            <element signature="e#2542#2588#0" />
-            <element signature="e#2623#2723#0" />
-            <element signature="e#2796#2879#0" />
-            <element signature="e#2942#3009#0" />
-            <element signature="e#3032#3091#0" />
-            <element signature="e#3125#3197#0" />
-            <element signature="n#!!block;n#TestBooleanExpression#0" />
-            <element signature="e#3373#3419#0" />
-            <element signature="e#3454#3554#0" />
-            <element signature="e#3627#3710#0" />
-            <element signature="e#3766#3830#0" />
-            <element signature="e#3856#3918#0" />
-            <element signature="e#3955#4027#0" />
-            <element signature="n#!!block;n#TestParsingPrefixExpressions#0" />
-            <element signature="e#4169#4265#0" />
-            <element signature="e#4299#5027#0" />
-            <element signature="e#4433#4539#0" />
-            <element signature="e#4614#4699#0" />
-            <element signature="e#4764#4839#0" />
-            <element signature="e#4874#4955#0" />
-            <element signature="e#5009#5024#0" />
-            <element signature="n#!!block;n#TestParsingInfixExpressions#0" />
-            <element signature="e#5199#5530#0" />
-            <element signature="e#5563#6064#0" />
-            <element signature="e#5672#5778#0" />
-            <element signature="e#5853#5955#0" />
-            <element signature="e#6045#6060#0" />
-            <element signature="n#!!block;n#TestOperatorPrecedenceParsing#0" />
-            <element signature="e#7565#7785#0" />
-            <element signature="e#7721#7782#0" />
-            <element signature="n#!!block;n#TestIfExpression#0" />
-            <element signature="e#7981#8081#0" />
-            <element signature="e#8153#8236#0" />
-            <element signature="e#8294#8363#0" />
-            <element signature="e#8423#8436#0" />
-            <element signature="e#8479#8570#0" />
-            <element signature="e#8657#8757#0" />
-            <element signature="e#8811#8824#0" />
-            <element signature="e#8853#8936#0" />
-            <element signature="n#!!block;n#TestIfElseExpression#0" />
-            <element signature="e#9147#9247#0" />
-            <element signature="e#9319#9402#0" />
-            <element signature="e#9460#9529#0" />
-            <element signature="e#9589#9602#0" />
-            <element signature="e#9645#9736#0" />
-            <element signature="e#9823#9923#0" />
-            <element signature="e#9977#9990#0" />
-            <element signature="e#10033#10124#0" />
-            <element signature="e#10211#10311#0" />
-            <element signature="e#10365#10378#0" />
-            <element signature="n#!!block;n#TestFunctionLiteralParsing#0" />
-            <element signature="e#10586#10686#0" />
-            <element signature="e#10758#10841#0" />
-            <element signature="e#10907#10979#0" />
-            <element signature="e#11015#11100#0" />
-            <element signature="e#11252#11347#0" />
-            <element signature="e#11429#11534#0" />
-            <element signature="n#!!block;n#TestFunctionParameterParsing#0" />
-            <element signature="e#11722#11903#0" />
-            <element signature="e#11883#11898#0" />
-            <element signature="e#11931#12428#0" />
-            <element signature="e#12200#12317#0" />
-            <element signature="e#12361#12425#0" />
-            <element signature="n#!!block;n#TestCallExpression#0" />
-            <element signature="e#12630#12730#0" />
-            <element signature="e#12802#12885#0" />
-            <element signature="e#12945#13014#0" />
-            <element signature="e#13060#13073#0" />
-            <element signature="e#13103#13175#0" />
-            <element signature="n#!!block;n#TestStringLiteralExpression#0" />
-            <element signature="n#!!block;n#TestParsingArrayLiterals#0" />
-            <element signature="n#!!block;n#TestParsingIndexExpressions#0" />
-            <element signature="n#!!block;n#checkParserErrors#0" />
-            <element signature="n#!!block;n#testLetStatement#0" />
-            <element signature="n#!!block;n#testIntegerLiteral#0" />
-            <element signature="n#!!block;n#testIdentifier#0" />
-            <element signature="n#!!block;n#testBooleanLiteral#0" />
-            <element signature="n#!!block;n#testInfixExpression#0" />
-            <element signature="n#!!block;n#testLiteralExpression#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ast/ast.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="390" column="23" lean-forward="true" selection-start-line="379" selection-end-line="390" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/object/object.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="123" column="54" lean-forward="true" selection-start-line="123" selection-start-column="54" selection-end-line="123" selection-end-column="54" />
-          <folding>
-            <element signature="n#!!block;n#Inspect#0" />
-            <element signature="n#!!block;n#Type#0" />
-            <element signature="n#!!block;n#Inspect#1" />
-            <element signature="n#!!block;n#Type#1" />
-            <element signature="n#!!block;n#Inspect#2" />
-            <element signature="n#!!block;n#Type#2" />
-            <element signature="n#!!block;n#Inspect#3" />
-            <element signature="n#!!block;n#Type#3" />
-            <element signature="n#!!block;n#Inspect#4" />
-            <element signature="n#!!block;n#Type#4" />
-            <element signature="n#!!block;n#Inspect#5" />
-            <element signature="n#!!block;n#Type#5" />
-            <element signature="n#!!block;n#Inspect#6" />
-            <element signature="n#!!block;n#Type#6" />
           </folding>
         </state>
       </provider>
@@ -736,10 +517,202 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/evaluator/builtins.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="61" column="31" lean-forward="true" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ast/ast.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="405" column="24" selection-start-line="405" selection-start-column="24" selection-end-line="405" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lexer/lexer_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="91" column="23" lean-forward="true" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!block;n#TestLexer_NextToken_Basic#0" />
+            <element signature="e#205#412#0" />
+            <element signature="n#!!block;n#TestLexer_NextToken_Keywords#0" />
+            <element signature="e#654#1066#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lexer/lexer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/token/token.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="37" column="10" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/object/object_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/parser.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="e#590#685#0" />
+            <element signature="e#699#892#0" />
+            <element signature="n#!!block;n#New#0" />
+            <element signature="n#!!block;n#ParseProgram#0" />
+            <element signature="n#!!block;n#parseStatement#0" />
+            <element signature="n#!!block;n#parseLetStatement#0" />
+            <element signature="n#!!block;n#parseReturnStatement#0" />
+            <element signature="n#!!block;n#parseExpressionStatement#0" />
+            <element signature="n#!!block;n#parseBoolean#0" />
+            <element signature="n#!!block;n#parseExpression#0" />
+            <element signature="n#!!block;n#parseIdentifier#0" />
+            <element signature="n#!!block;n#parseIntegerLiteral#0" />
+            <element signature="n#!!block;n#parsePrefixExpression#0" />
+            <element signature="n#!!block;n#parseInfixExpression#0" />
+            <element signature="n#!!block;n#parseIndexExpression#0" />
+            <element signature="n#!!block;n#parseGroupedExpression#0" />
+            <element signature="n#!!block;n#parseIfExpression#0" />
+            <element signature="n#!!block;n#parseCallExpression#0" />
+            <element signature="n#!!block;n#parseCallArguments#0" />
+            <element signature="n#!!block;n#parseBlockStatement#0" />
+            <element signature="n#!!block;n#parseFunctionLiteral#0" />
+            <element signature="n#!!block;n#parseStringLiteral#0" />
+            <element signature="n#!!block;n#parseArrayLiteral#0" />
+            <element signature="n#!!block;n#parseArrayLiteral#1" />
+            <element signature="n#!!block;n#parseExpressionList#0" />
+            <element signature="n#!!block;n#parseFunctionParameters#0" />
+            <element signature="n#!!block;n#Errors#0" />
+            <element signature="n#!!block;n#peekError#0" />
+            <element signature="n#!!block;n#noPrefixParseFnError#0" />
+            <element signature="n#!!block;n#registerPrefix#0" />
+            <element signature="n#!!block;n#registerInfix#0" />
+            <element signature="n#!!block;n#nextToken#0" />
+            <element signature="n#!!block;n#curTokenIs#0" />
+            <element signature="n#!!block;n#peekTokenIs#0" />
+            <element signature="n#!!block;n#expectPeek#0" />
+            <element signature="n#!!block;n#peekPrecedence#0" />
+            <element signature="n#!!block;n#curPrecedence#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/parser_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="542" selection-start-line="542" selection-end-line="542" />
+          <folding>
+            <element signature="n#!!block;n#TestLetStatements#0" />
+            <element signature="e#225#333#0" />
+            <element signature="e#361#817#0" />
+            <element signature="e#496#598#0" />
+            <element signature="e#687#702#0" />
+            <element signature="e#798#813#0" />
+            <element signature="n#!!block;n#TestReturnStatements#0" />
+            <element signature="e#1027#1073#0" />
+            <element signature="e#1108#1208#0" />
+            <element signature="e#1250#1513#0" />
+            <element signature="e#1310#1386#0" />
+            <element signature="e#1431#1510#0" />
+            <element signature="n#!!block;n#TestIdentifierExpression#0" />
+            <element signature="e#1694#1740#0" />
+            <element signature="e#1775#1875#0" />
+            <element signature="e#1948#2031#0" />
+            <element signature="e#2090#2157#0" />
+            <element signature="e#2187#2251#0" />
+            <element signature="e#2290#2362#0" />
+            <element signature="n#!!block;n#TestIntegerLiteralExpression#0" />
+            <element signature="e#2542#2588#0" />
+            <element signature="e#2623#2723#0" />
+            <element signature="e#2796#2879#0" />
+            <element signature="e#2942#3009#0" />
+            <element signature="e#3032#3091#0" />
+            <element signature="e#3125#3197#0" />
+            <element signature="n#!!block;n#TestBooleanExpression#0" />
+            <element signature="e#3373#3419#0" />
+            <element signature="e#3454#3554#0" />
+            <element signature="e#3627#3710#0" />
+            <element signature="e#3766#3830#0" />
+            <element signature="e#3856#3918#0" />
+            <element signature="e#3955#4027#0" />
+            <element signature="n#!!block;n#TestParsingPrefixExpressions#0" />
+            <element signature="e#4169#4265#0" />
+            <element signature="e#4299#5027#0" />
+            <element signature="e#4433#4539#0" />
+            <element signature="e#4614#4699#0" />
+            <element signature="e#4764#4839#0" />
+            <element signature="e#4874#4955#0" />
+            <element signature="e#5009#5024#0" />
+            <element signature="n#!!block;n#TestParsingInfixExpressions#0" />
+            <element signature="e#5199#5530#0" />
+            <element signature="e#5563#6064#0" />
+            <element signature="e#5672#5778#0" />
+            <element signature="e#5853#5955#0" />
+            <element signature="e#6045#6060#0" />
+            <element signature="n#!!block;n#TestOperatorPrecedenceParsing#0" />
+            <element signature="n#!!block;n#TestIfExpression#0" />
+            <element signature="n#!!block;n#TestIfElseExpression#0" />
+            <element signature="n#!!block;n#TestFunctionLiteralParsing#0" />
+            <element signature="n#!!block;n#TestFunctionParameterParsing#0" />
+            <element signature="n#!!block;n#TestCallExpression#0" />
+            <element signature="n#!!block;n#TestStringLiteralExpression#0" />
+            <element signature="n#!!block;n#TestParsingArrayLiterals#0" />
+            <element signature="n#!!block;n#TestParsingIndexExpressions#0" />
+            <element signature="n#!!block;n#TestParsingHashLiterals#0" />
+            <element signature="n#!!block;n#TestParsingemptyHashLiterals#0" />
+            <element signature="n#!!block;n#TestParsingHashLiteralsWithExpressions#0" />
+            <element signature="n#!!block;n#checkParserErrors#0" />
+            <element signature="n#!!block;n#testLetStatement#0" />
+            <element signature="n#!!block;n#testIntegerLiteral#0" />
+            <element signature="n#!!block;n#testIdentifier#0" />
+            <element signature="n#!!block;n#testBooleanLiteral#0" />
+            <element signature="n#!!block;n#testInfixExpression#0" />
+            <element signature="n#!!block;n#testLiteralExpression#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/object/object.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#Inspect#0" />
+            <element signature="n#!!block;n#Type#0" />
+            <element signature="n#!!block;n#Inspect#1" />
+            <element signature="n#!!block;n#Type#1" />
+            <element signature="n#!!block;n#Inspect#2" />
+            <element signature="n#!!block;n#Type#2" />
+            <element signature="n#!!block;n#Inspect#3" />
+            <element signature="n#!!block;n#Type#3" />
+            <element signature="n#!!block;n#Inspect#4" />
+            <element signature="n#!!block;n#Type#4" />
+            <element signature="n#!!block;n#Inspect#5" />
+            <element signature="n#!!block;n#Type#5" />
+            <element signature="n#!!block;n#Inspect#6" />
+            <element signature="n#!!block;n#Type#6" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/evaluator/evaluator_test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="342" column="40" selection-start-line="342" selection-start-column="40" selection-end-line="342" selection-end-column="40" />
+        <state relative-caret-position="873">
+          <caret line="408" selection-start-line="408" selection-end-line="408" />
           <folding>
             <element signature="n#!!block;n#TestEvalIntegerExpression#0" />
             <element signature="e#194#527#0" />
@@ -751,23 +724,17 @@
             <element signature="n#!!block;n#TestIfElseExpressions#0" />
             <element signature="n#!!block;n#TestReturnStatements#0" />
             <element signature="n#!!block;n#TestErrorHandling#0" />
+            <element signature="n#!!block;n#TestLetStatements#0" />
             <element signature="n#!!block;n#TestFunctionObject#0" />
             <element signature="n#!!block;n#TestFunctionApplication#0" />
             <element signature="n#!!block;n#TestClosures#0" />
             <element signature="n#!!block;n#TestBuiltinFunctions#0" />
-            <element signature="n#!!block;n#TestArrayLiterals#0" />
+            <element signature="n#!!block;n#TestIndexExpressions#0" />
             <element signature="n#!!block;n#testNullObject#0" />
             <element signature="n#!!block;n#testBooleanObject#0" />
             <element signature="n#!!block;n#testEval#0" />
             <element signature="n#!!block;n#testIntegerObject#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evaluator/builtins.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="843">
-          <caret line="97" column="55" selection-start-line="97" selection-start-column="55" selection-end-line="97" selection-end-column="55" />
         </state>
       </provider>
     </entry>

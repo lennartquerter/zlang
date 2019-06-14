@@ -86,6 +86,7 @@ let result = add(five, ten);
 "foobar"
 "foo bar"
 [1, 2];
+{"test" : "hello",};
 `
 
 	tests := []struct {
@@ -152,6 +153,13 @@ let result = add(five, ten);
 		{token.COMMA, ","},
 		{token.INT, "2"},
 		{token.RBRACKET, "]"},
+		{token.SEMICOLON, ";"},
+		{token.LBRACE, "{"},
+		{token.STRING, "test"},
+		{token.COLON, ":"},
+		{token.STRING, "hello"},
+		{token.COMMA, ","},
+		{token.RBRACE, "}"},
 		{token.SEMICOLON, ";"},
 		{token.EOF, ""},
 	}
